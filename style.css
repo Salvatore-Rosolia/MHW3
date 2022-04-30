@@ -1,0 +1,241 @@
+/* TODO: inserite il CSS necessario per completare il MHW! */
+.question-name {
+    border: 2px solid white;
+    border-radius: 20%;
+}
+#ricerca1 {
+    display: flex;
+    position: fixed;
+    width: 30%;
+    margin: 1%;
+    flex-direction: column;
+    flex-grow: 0;
+}
+
+#ricerca2 {
+    display: flex;
+    position: fixed;
+    left: 68%;
+    margin: 1%;
+    width: 30%;
+    flex-direction: column;
+    flex-grow: 0;
+}
+
+#results2 {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    overflow: auto;
+    height: 720px;
+    width: 100%;
+}
+
+.album {
+    width: 45%;
+    height: min-content;
+    display: flex;
+    flex-direction: column;
+    margin: 4px;
+    border: 2px  solid black;
+    border-radius: 5px;
+    
+}
+.album__image {
+    width: 100%;
+    
+    height: auto;
+}
+.album__copy{
+    
+    text-align: center;
+    height: fit-content;
+    
+}
+.album__copy span {
+    size: x-small;
+}
+.album__copy a {
+    color: black;
+}
+.album__copy h1 {
+    font-size: large;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+}
+
+
+.cell {
+    border: 2px solid black;
+    border-radius: 100px;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px;
+
+}
+
+
+.cell h3 {
+    padding-left: 20px;
+    width: 15%;
+    font-size: large;
+    font-family: 'Poppins', sans-serif;
+}
+.cell p {
+    width: 60%;
+    
+    padding-right: 6%;
+    
+    font-family: 'Crimson Pro', serif;
+}
+.box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+
+#results1 {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: auto;
+    height: 720px;
+    width: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.choice-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+.choice-grid div {
+    width: 32.5%;
+    border: solid 1px #dcdcdc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top:  10px;
+    margin-left: 2px;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    
+
+}
+
+.cornice {
+    background-color: #f4f4f4;
+} 
+
+.choice-grid div img {
+    justify-content: center;
+    padding: 1px;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.checkbox{
+    width: 20px;
+    height: 20px;
+}
+
+.selezione{
+   
+    background-color: #cfe3ff;
+}
+
+.opaco {
+    opacity: 0.6;
+}
+
+.hidden {
+    display: none;
+}
+
+.dec{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin-top: 40px;
+    padding: 20px;
+    margin-bottom: 20px;
+
+}
+#risultato h1{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+
+ #risultato p {
+     margin-top: 18px;
+    margin-bottom: 18px;
+    text-align: center;
+}
+
+.button {
+height: 50px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+text-align: center;
+background-color: #cecece;
+}
+
+#end {
+    display:flex;
+    justify-content: space-around;
+}
+
+.botton:hover {
+  background-color: #e0e0e0;
+}
+
+
+@media (max-width: 700px) {
+    article {
+        width: 95%;
+    } 
+    header div span {
+        display: none;
+    }
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+    #ricerca1 , #ricerca2{
+        position: static;
+        top: auto;
+        bottom: auto;
+        width: 95%;
+
+
+    }
+    
+}
+
+@media (max-width: 500px) {
+    .choice-grid div {
+        width: 49%;
+    }
+}
+
+
